@@ -88,4 +88,61 @@ body {
 
 #restartButton:hover {
     background-color: #45a049;
+}
+
+/* 移动端适配 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.fssdk-form-field {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+/* 确保所有元素都不会超出屏幕宽度 */
+.fssdk-areacode-select-item,
+.fssdk-areacode-item-num,
+.fssdk-areacode-item-name,
+.fssdk-phone-password,
+.fssdk-phone-dynamic,
+.fssdk-form-field-value {
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 响应式布局 */
+@media screen and (max-width: 768px) {
+    .fssdk-form-field {
+        padding: 0 10px;
+    }
+    
+    input {
+        font-size: 16px; /* 防止 iOS 自动缩放 */
+    }
 } 
