@@ -1,6 +1,23 @@
-body {
+/* 全局滚动条设置 */
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 隐藏所有滚动条 */
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +35,7 @@ body {
     align-items: center;
     background-size: cover;
     background-position: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .game-container {
@@ -31,16 +48,6 @@ body {
     backdrop-filter: blur(5px);
     margin: 20px;
     overflow: hidden;
-}
-
-/* 隐藏滚动条但保持可滚动 */
-.game-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-}
-
-.game-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 #gameCanvas {
