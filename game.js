@@ -108,7 +108,7 @@ class Cloud {
 }
 
 // 游戏参数
-const gravity = 0.35;
+const gravity = 0.28;
 const jumpForce = -5;
 const pipeWidth = 73;
 const pipeGap = 170;
@@ -376,8 +376,8 @@ function updatePipes() {
             scoreElement.textContent = `分数: ${score}`;
             console.log('当前分数：', score); // 调试用
             
-            // 检查是否达到8分
-            if (score >= 8) {
+            // 检查是否达到26分
+            if (score >= 26) {
                 showEnding();
                 return;
             }
