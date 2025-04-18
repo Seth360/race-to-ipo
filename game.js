@@ -608,6 +608,19 @@ document.addEventListener('click', () => {
 
 // 初始化游戏
 function initGame() {
+    // 创建操作提示
+    const gameTip = document.createElement('div');
+    gameTip.style.position = 'absolute';
+    gameTip.style.bottom = '10px';
+    gameTip.style.left = '50%';
+    gameTip.style.transform = 'translateX(-50%)';
+    gameTip.style.textAlign = 'center';
+    gameTip.style.padding = '10px';
+    gameTip.style.color = '#fff';
+    gameTip.style.fontSize = '12px';
+    gameTip.textContent = '点击鼠标左键or键盘空格 进行游戏';
+    canvas.parentElement.appendChild(gameTip);
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     startScreen.style.display = 'block'; // 显示开始界面
     canvas.style.display = 'none'; // 隐藏游戏画布
