@@ -1,6 +1,44 @@
+# 系统文件
 .DS_Store
-node_modules/
-.env
-*.log
+Thumbs.db
+
+# IDE 配置文件
+.idea/
 .vscode/
-.idea/ 
+*.sublime-*
+
+# 依赖目录
+node_modules/
+vendor/
+
+# 环境配置文件
+.env
+.env.*
+config.local.js
+*.local.js
+
+# 日志文件
+*.log
+logs/
+debug.log
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 编译输出
+dist/
+build/
+out/
+
+# 密钥和证书
+*.pem
+*.key
+*.cert
+*.crt
+
+# 其他敏感信息
+credentials.json
+secrets.json
+*config.json 

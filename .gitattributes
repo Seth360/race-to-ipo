@@ -1,0 +1,28 @@
+# 自动检测文本文件并进行规范化
+* text=auto
+
+# 文档
+*.md text diff=markdown
+*.txt text
+*.html text diff=html
+*.css text diff=css
+*.js text
+*.json text
+
+# 图片文件作为二进制处理
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# 字体文件
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+
+# 不要导出这些文件/文件夹
+.gitattributes export-ignore
+.gitignore export-ignore
+.gitkeep export-ignore 
